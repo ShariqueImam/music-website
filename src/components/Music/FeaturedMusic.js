@@ -25,7 +25,7 @@ const FeaturedMusic = () => {
       <AboutHeading className="flex items-center justify-center mt-12 md:mt-12">
         <p className="text-6xl md:text-8xl text-white">Featured Music</p>
       </AboutHeading>
-      <div className="flex items-center justify-around  w-[100%] md:w-[70%] mx-auto">
+      <div className="flex items-center justify-around flex-col md:flex-row  w-[100%] md:w-[70%] mx-auto">
         <img src={img1} alt="" className="scale-[0.8]" />
         <div className="flex flex-col items-start ">
           <section>
@@ -53,7 +53,7 @@ const FeaturedMusic = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-around  w-[100%] md:w-[70%] mx-auto">
+      <div className="flex items-center justify-around flex-col md:flex-row  w-[100%] md:w-[70%] mx-auto">
         <div className="flex flex-col items-end ">
           <section>
             <h2 className="homeTextColor m-1 text-5xl md:text-7xl font-bold">
@@ -81,7 +81,7 @@ const FeaturedMusic = () => {
         </div>
         <img src={img2} alt="" className="scale-[0.8]" />
       </div>
-      <div className="flex items-center justify-around  w-[100%] md:w-[70%] mx-auto">
+      <div className="flex items-center justify-around flex-col md:flex-row w-[100%] md:w-[70%] mx-auto">
         <img src={img3} alt="" className="scale-[0.8]" />
         <div className="flex flex-col items-start ">
           <section>

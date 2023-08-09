@@ -11,7 +11,7 @@ const MoreMusic = () => {
         <p className="text-4xl md:text-5xl text-white my-4">More Music</p>
         <p className="underlineColor w-[10vw] h-[0.3vh]"></p>
       </div>
-      <section className="flex items-center justify-center ">
+      <section className="flex items-center justify-center flex-col md:flex-row">
         <SingleCard image={img1} heading={"Green Hoodie"} price={"$150"} />
         <SingleCard image={moreMusic} heading={"Green Hoodie"} price={"$150"} />
         <SingleCard image={img2} heading={"Green Hoodie"} price={"$150"} />

@@ -44,7 +44,7 @@ const Upcoming = () => {
     background-attachment: auto;
     border-radius: 70px;
     transform: scale(0.9);
-    width: 20vw;
+    width: 35vw;
     height: 60vh;
   `;
   return (

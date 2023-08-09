@@ -20,7 +20,7 @@ const Title = () => {
       <AboutHeading className="flex items-center justify-center mt-24 md:mt-32">
         <p className="text-6xl md:text-8xl text-white">About Me</p>
       </AboutHeading>
-      <div className="flex items-center">
+      <div className="flex items-center flex-col md:flex-row">
         <section>
           <h2 className="text-7xl md:text-8xl text-white font-semibold w-[70%]">
             listen it on sound cloud!
