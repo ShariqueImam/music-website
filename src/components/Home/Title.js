@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import homeImg from "../../assets/home/homebg.png";
+import { Link } from "react-router-dom";
 const Title = () => {
   const HomeBg = styled.div`
     background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -27,7 +28,11 @@ const Title = () => {
           <p className={style.white}>Your</p>
           <p className={style.color}>Imagination</p>
         </div>
-        <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-4">Explore Now</button>
+        <Link to="/music">
+          <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-4">
+            Explore Now
+          </button>
+        </Link>
       </div>
     </HomeBg>
   );

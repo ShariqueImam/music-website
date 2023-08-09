@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../../assets/home/aboutheading.png";
+import { Link } from "react-router-dom";
 import about from "../../assets/home/about.png";
 const About = () => {
   const style = {};
@@ -14,7 +15,7 @@ const About = () => {
     width: 100vw;
     transform: scale(0.5);
   `;
- 
+
   return (
     <div>
       <AboutHeading className="flex items-center justify-center">
@@ -36,9 +37,11 @@ const About = () => {
             PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
             dummy text of the printing and typesetting industry.
           </p>
-          <button className="exploreBtn text-white px-10 md:px-14 py-3 py-3 md:py-3 my-4">
-            Learn More{" "}
-          </button>
+          <Link to="/music">
+            <button className="exploreBtn text-white px-10 md:px-14 py-3 py-3 md:py-3 my-4">
+              Learn More{" "}
+            </button>
+          </Link>
         </section>
         <section className="md:w-[30%]">
           <img src={about} alt="" />

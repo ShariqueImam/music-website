@@ -14,7 +14,7 @@ const SingleCard = ({ swagData }) => {
     background-size: cover;
     background-position: center;
     background-attachment: auto;
-    width: 30%; 
+    width: 100%; 
     height: 55vh;
   `;
   return (

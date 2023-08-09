@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlinePhone } from "react-icons/ai";
 import NavDrawer from "./NavDrawer";
 import logo from "../../../assets/home/logo.png";
+import { Link } from "react-router-dom";
 import "animate.css";
 const Navbar = (props) => {
   const style = {
@@ -34,22 +35,29 @@ const Navbar = (props) => {
         </div>
         <div className={style.navList}>
           <ul className={style.navContainer}>
-            <li className={style.list}>Home</li>
-
-            <li className={style.list} onClick={() => setItem("services")}>
-              Music
-            </li>
-
-            <li className={style.list} onClick={() => setItem("about")}>
-              Swags
-            </li>
-
-            <li className={style.list} onClick={() => setItem("email")}>
-              Horoscope
-            </li>
-            <li className={style.list} onClick={() => setItem("email")}>
-              Lobby
-            </li>
+            <Link to="/">
+              <li className={style.list}>Home</li>
+            </Link>
+            <Link to="/music">
+              <li className={style.list} onClick={() => setItem("services")}>
+                Music
+              </li>
+            </Link>
+            <Link to="/swags">
+              <li className={style.list} onClick={() => setItem("about")}>
+                Swags
+              </li>
+            </Link>
+            <Link to="/horoscope">
+              <li className={style.list} onClick={() => setItem("email")}>
+                Horoscope
+              </li>
+            </Link>
+            <Link to="/">
+              <li className={style.list} onClick={() => setItem("email")}>
+                Lobby
+              </li>
+            </Link>
           </ul>
         </div>
         <button className={style.cartButton} onClick={() => setItem("contact")}>
