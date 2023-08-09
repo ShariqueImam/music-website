@@ -2,8 +2,9 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
+import { Link } from "react-router-dom";
 import useWindowSize from "../../../hooks/useWindowSize";
-
+import logo from "../../../assets/home/logo.png";
 const NavDrawer = (props) => {
   const { width } = useWindowSize();
   const [state, setState] = React.useState({
@@ -20,7 +21,7 @@ const NavDrawer = (props) => {
     setState({ ...state, [anchor]: open });
   };
   const style = {
-    list: "list-none cursor-pointer  text-neutral-600 my-3  mx-auto md:mx-4 hover:opacity-[0.8] text-sm font-normal",
+    list: "list-none cursor-pointer  text-neutral-400 my-3  mx-auto md:mx-4 hover:opacity-[0.8] text-sm font-normal",
     input: "bg-transparent mx-4",
   };
   const list = (anchor) => (
@@ -28,7 +29,7 @@ const NavDrawer = (props) => {
       sx={{
         zIndex: "0",
         color: "rgb(255,255,255)",
-        backgroundColor: "#fff",
+        backgroundColor: " #0b0b0b",
 
         width:
           anchor === "top" || anchor === "bottom"
@@ -45,33 +46,41 @@ const NavDrawer = (props) => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <div className="h-[40vh] font flex flex-col my-8 bg-white items-center">
-          {/* <Image src={""} height={1} width={1}/> */}
-          <h2 className="text-3xl font-bold text-neutral-600 mx-auto my-24  tracking-wide">
-          СТОБОТ
+        <div className="h-[40vh] font flex flex-col my-8  bg-[#0b0b0b] items-center">
+          <img src={logo} />
 
-          </h2>
           {/* adding the navs */}
-          <ul className="flex  flex-col">
-            <li className={style.list}>Home</li>
-
-            <li
-              className={style.list}
-              onClick={() => props.onScroll("services")}
-            >
-              Services
-            </li>
-
-            <li className={style.list} onClick={() => props.onScroll("about")}>
-              About
-            </li>
-
-            <li className={style.list} onClick={() => props.onScroll("email")}>
-              Email
-            </li>
+          <ul className="flex  flex-col  bg-[#0b0b0b] mt-12">
+            <Link to={"/"}>
+              <li className={style.list}>Home</li>
+            </Link>
+            <Link to={"/music"}>
+              <li
+                className={style.list}
+                onClick={() => props.onScroll("services")}
+              >
+                Music
+              </li>
+            </Link>
+            <Link to={"/swags"}>
+              <li
+                className={style.list}
+                onClick={() => props.onScroll("about")}
+              >
+                Swags
+              </li>
+            </Link>
+            <Link to={"/horoscope"}>
+              <li
+                className={style.list}
+                onClick={() => props.onScroll("email")}
+              >
+                Horoscope
+              </li>
+            </Link>
           </ul>
           <button
-            className="mx-auto bg-neutral-600 text-white px-12 py-2 rounded-lg mt-48 cursor-pointer hover:opacity-[0.9]"
+            className="mx-auto exploreBtn text-white px-12 py-2 rounded-lg mt-48 cursor-pointer hover:opacity-[0.9]"
             onClick={() => props.onScroll("contact")}
           >
             Contact
@@ -86,11 +95,9 @@ const NavDrawer = (props) => {
       {/* below string will set the location of the drawer */}
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <button className="px-2 py-4 flex items-center justify-between w-[100vw] border-b-[1px]">
-            <h2 className="text-3xl font-bold text-white  tracking-wide">
-            СТОБОТ
+          <button className=" bg-[#0b0b0b] px-2 py-4 flex items-center justify-between w-[100vw] border-b-[1px]">
+            <img src={logo} />
 
-            </h2>
             <section className="flex">
               <div className="" onClick={toggleDrawer(anchor, true)}>
                 {

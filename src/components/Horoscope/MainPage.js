@@ -44,7 +44,7 @@ const MainPage = () => {
       </AboutHeading>
       <Heading1 className="flex items-center justify-center flex-col">
         <div className="flex items-center justify-center flex-col my-8">
-          <p className="text-4xl md:text-5xl text-white my-4">
+          <p className="text-4xl md:text-5xl text-white my-4 text-center md:text-center">
             To Know About Your Daily Horoscope
           </p>
           <p className="underlineColor w-[15vw] h-[0.3vh]"></p>
