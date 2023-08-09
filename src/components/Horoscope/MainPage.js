@@ -40,7 +40,7 @@ const MainPage = () => {
     <div className="flex flex-col items-center justify-center">
       {" "}
       <AboutHeading className="flex items-center justify-center mt-24 md:mt-32">
-        <p className="text-6xl md:text-8xl text-white">Swags</p>
+        <p className="text-6xl md:text-8xl text-white">Horoscope</p>
       </AboutHeading>
       <Heading1 className="flex items-center justify-center flex-col">
         <div className="flex items-center justify-center flex-col my-8">
