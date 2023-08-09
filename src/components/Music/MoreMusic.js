@@ -24,7 +24,7 @@ export default MoreMusic;
 
 const style = {
   wrapper:
-    "mx-5 md:mx-3 my-4 p-6 md:p-12 flex flex-col items-start justify-end",
+    "mx-5 md:mx-3 my-4 p-6 md:p-12 flex flex-col items-start justify-end w-[70%] md:w-[23%]",
   heading: "font-thin text-2xl md:text-2xl text-white w-[100%] md:w-[80%]",
   para: " text-sm md:text-xl mt-2 text-white font-semibold",
   line: "underline cursor-pointer",
@@ -40,7 +40,6 @@ const SingleCard = ({ price, heading, image }) => {
     background-position: center;
     background-attachment: auto;
     border-radius: 30px;
-    width: 23%;
     height: 55vh;
   `;
   return (
