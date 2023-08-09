@@ -109,15 +109,21 @@ const SwagDetails = ({ match }) => {
     },
   ];
   const product = swagData.find((item) => item.id === parseInt(params.id));
-
+  console.log(product);
   return (
     <div className="bg-[#0b0b0b] flex flex-col items-center">
       <Navbar onScroll={onScroll} />
       <Title />
       <div className="flex flex-col md:flex-row">
-        <img src={product.img} alt="" className="rounded-2xl w-64 mx-auto md:w-auto" />
+        <img
+          src={swagImg1}
+          alt=""
+          className="rounded-2xl w-64 mx-auto md:w-auto"
+        />
         <section className="text-white mx-12 md:mx-24 flex flex-col items-center md:items-start">
-          <h2 className="text-5xl md:text-4xl font-thin my-3">{product.name}</h2>
+          <h2 className="text-5xl md:text-4xl font-thin my-3">
+            {product.name}
+          </h2>
           <h2 className="font-thin my-4">{product.info}</h2>
           <h2 className="font-semibold text-5xl md:text-6xl my-4">
             {product.price}
