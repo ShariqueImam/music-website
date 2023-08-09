@@ -1,0 +1,52 @@
+import React from "react";
+import img1 from "../../assets/home/wedrobe1.png";
+import styled from "styled-components";
+import moreMusic from "../../assets/music/moreMusic.png";
+import img2 from "../../assets/music/featured1.png";
+const MoreMusic = () => {
+  return (
+    <div className="flex flex-col justify-center w-[100%] md:w-[90%]">
+      {" "}
+      <div className="flex items-center justify-center flex-col my-8">
+        <p className="text-4xl md:text-5xl text-white my-4">More Music</p>
+        <p className="underlineColor w-[10vw] h-[0.3vh]"></p>
+      </div>
+      <section className="flex items-center justify-center ">
+        <SingleCard image={img1} heading={"Green Hoodie"} price={"$150"} />
+        <SingleCard image={moreMusic} heading={"Green Hoodie"} price={"$150"} />
+        <SingleCard image={img2} heading={"Green Hoodie"} price={"$150"} />
+      </section>
+    </div>
+  );
+};
+
+export default MoreMusic;
+
+const style = {
+  wrapper:
+    "mx-5 md:mx-3 my-4 p-6 md:p-12 flex flex-col items-start justify-end",
+  heading: "font-thin text-2xl md:text-2xl text-white w-[100%] md:w-[80%]",
+  para: " text-sm md:text-xl mt-2 text-white font-semibold",
+  line: "underline cursor-pointer",
+  button:
+    "bg-white flex items-center justify-center text-black px-5 md:px-8 py-2 md:py-3 rounded-full mt-7",
+  btnText: "bg-white flex items-center justify-center text-black",
+};
+const SingleCard = ({ price, heading, image }) => {
+  const FeaturedBackground1 = styled.div`
+    background: url(${image});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: auto;
+    border-radius: 30px;
+    width: 23%;
+    height: 55vh;
+  `;
+  return (
+    <FeaturedBackground1 className={style.wrapper}>
+      <h2 className={style.heading}>{heading}</h2>
+      <h2 className={style.para}>{price}</h2>
+    </FeaturedBackground1>
+  );
+};

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font {
+  font-family: "Poppins", sans-serif;
+}
+
+.contactNow {
+  /* border-radius: 0.38006rem;
+  background: linear-gradient(
+    145deg,
+    rgba(242, 137, 189, 0.11) 0%,
+    rgba(173, 183, 234, 0.11) 100%
+  );
+  backdrop-filter: blur(2.0077219009399414px); */
+  background-color: red;
+}
