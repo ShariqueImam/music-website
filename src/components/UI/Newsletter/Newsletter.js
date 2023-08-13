@@ -6,7 +6,7 @@ const Newsletter = () => {
   };
   return (
     <div className="newsletter flex items-center justify-center flex-col my-12">
-      <section>
+      {/* <section>
         <img src={mail} alt="" className="w-1 scale-[12]" />
       </section>
       <p className="text-white text-lg md:text-2xl my-8 md:my-7 font-thin w-[70%] text-center pt-12">
@@ -22,7 +22,7 @@ const Newsletter = () => {
         <button className="newsletterButton px-12 px-14 py-2 md:py-3 text-white my-8">
           Submit
         </button>
-      </section>
+      </section> */}
     </div>
   );
 };

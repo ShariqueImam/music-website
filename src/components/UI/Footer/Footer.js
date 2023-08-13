@@ -10,7 +10,7 @@ import { BsTiktok } from "react-icons/bs";
 const Footer = (props) => {
   const style = {
     wrapper:
-      "font text-neutral-100 flex flex-col w-[100%] md:w-[60%] mx-auto items-center justify-between py-6 md:py-12 ",
+      "font text-neutral-100 flex flex-col w-[100%] md:w-[60%] mx-auto items-center justify-between py-6 md:py-12 mt-44",
     para: "font-light border-move-animation list-none cursor-pointer text-white mx-2 md:mx-3  text-md tracking-wide",
   };
 

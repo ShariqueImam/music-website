@@ -2,13 +2,19 @@ import React from "react";
 import img1 from "../../assets/home/wedrobe1.png";
 import styled from "styled-components";
 import moreMusic from "../../assets/music/moreMusic.png";
+import pink from '../../assets/pink.png'
 import img2 from "../../assets/music/featured1.png";
 const MoreMusic = () => {
   return (
-    <div className="flex flex-col justify-center w-[100%] md:w-[90%]">
+    <div className="flex flex-col justify-center w-[100%] md:w-[90%] z-10">
       {" "}
-      <div className="flex items-center justify-center flex-col my-8">
-        <p className="text-4xl md:text-5xl text-white my-4">More Music</p>
+      <img
+        src={pink}
+        alt=""
+        className="absolute z-0 ml-[-20rem] mb-[-50rem]"
+      />{" "}
+      <div className="flex items-center justify-center flex-col my-8 my-16">
+        <p className="text-4xl md:text-5xl text-white my-16">More Music</p>
         <p className="underlineColor w-[10vw] h-[0.3vh]"></p>
       </div>
       <section className="flex items-center justify-center flex-col md:flex-row">

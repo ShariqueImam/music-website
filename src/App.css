@@ -5,14 +5,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,700&display=swap");
 
-.font {
-  font-family: "Raleway", sans-serif;
-}
-.font1 {
-  font-family: "Ubuntu", sans-serif;
-}
-.font2 {
-  font-family: "Montserrat", sans-serif;
+:root {
+  --swiper-pagination-color: #4259ec;
+  --swiper-pagination-bullet-size:12px;
+  --swiper-pagination-bullet-width: 15px;
+  --swiper-pagination-bullet-height: 15px;
+  --swiper-pagination-bullet-inactive-color: #f33c9a;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
 }
 .newsletterBg {
   background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -28,7 +30,7 @@
   display: block;
   width: 0;
   height: 1px;
-  background: white;
+  background: #ea2587;
   transition: width 0.3s;
 }
 
@@ -39,6 +41,7 @@
 
 .contactNow {
   border-radius: 0.38006rem;
+  border-image-slice: 1;
   background: linear-gradient(
     145deg,
     rgba(242, 137, 189, 0.11) 0%,
@@ -46,7 +49,11 @@
   );
   backdrop-filter: blur(2.0077219009399414px);
 }
-
+.border-gradient-purple {
+  /* border-radius: 0.38006rem;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
+  border-color: #d53a9d;
+}
 .homeTextColor {
   background: linear-gradient(
     166deg,
@@ -80,6 +87,10 @@
   border-radius: 0.9375rem;
   background: linear-gradient(99deg, #f33c9a 0%, #4259ec 100%);
 }
+.exploreBtn:hover {
+  background: transparent;
+  border: 1px solid #d53a9d;
+}
 .horo {
   background: linear-gradient(99deg, #f33c9a 0%, #4259ec 100%);
 }
@@ -109,4 +120,10 @@
 .swagsItem {
   background: rgba(50, 1, 25, 0.75);
   backdrop-filter: blur(0.5px);
+}
+.crop {
+  clip-path: polygon(1% 0, 99% 30%, 100% 74%, 0% 100%);
+}
+.crop1 {
+  clip-path: polygon(0 31%, 100% 0, 100% 100%, 0 74%);
 }

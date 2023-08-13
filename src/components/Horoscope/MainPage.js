@@ -19,9 +19,10 @@ const MainPage = () => {
     background-size: cover;
     background-position: center;
     background-attachment: auto;
-    height: 25vh;
+    height: 30vh;
     width: 80vw;
     transform: scale(0.5);
+    margin:5rem;
   `;
   const Heading1 = styled.div`
     background: url(${img1});
@@ -42,7 +43,7 @@ const MainPage = () => {
       <AboutHeading className="flex items-center justify-center mt-24 md:mt-32">
         <p className="text-6xl md:text-8xl text-white">Horoscope</p>
       </AboutHeading>
-      <Heading1 className="flex items-center justify-center flex-col">
+      <Heading1 className="flex items-center justify-center flex-col py-24">
         <div className="flex items-center justify-center flex-col my-8">
           <p className="text-4xl md:text-5xl text-white my-4 text-center md:text-center">
             To Know About Your Daily Horoscope
@@ -131,7 +132,7 @@ const MainPage = () => {
             <img src={sign10} alt="" className={style.item} />{" "}
           </p>
         </div>
-        <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-4">
+        <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-12">
           Explore Now
         </button>
       </Heading1>

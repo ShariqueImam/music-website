@@ -4,6 +4,7 @@ import styled from "styled-components";
 import upcoming1 from "../../assets/music/featured1.png";
 import upcoming2 from "../../assets/music/featured2.png";
 import lock from "../../assets/music/lock.png";
+import pink from '../../assets/pink.png'
 const Upcoming = () => {
   const AboutHeading = styled.div`
     background: url(${img1});
@@ -13,6 +14,8 @@ const Upcoming = () => {
     background-attachment: auto;
     height: 40vh;
     width: 100vw;
+    margin: 5rem;
+
     transform: scale(0.5);
   `;
   const Upcoming1 = styled.div`
@@ -28,7 +31,7 @@ const Upcoming = () => {
     background-attachment: auto;
     border-radius: 70px;
     transform: scale(0.9);
-    width: 35vw;
+    width: 25vw;
     height: 60vh;
   `;
   const Upcoming2 = styled.div`
@@ -44,23 +47,23 @@ const Upcoming = () => {
     background-attachment: auto;
     border-radius: 70px;
     transform: scale(0.9);
-    width: 35vw;
+    width: 25vw;
     height: 60vh;
   `;
   return (
     <div>
       <AboutHeading className="flex items-center justify-center">
         <p className="text-6xl md:text-8xl text-white">Upcoming Music</p>
-      </AboutHeading>
+      </AboutHeading>{" "}
       <div className="flex items-center justify-center">
         <Upcoming1 className="flex items-center justify-center flex flex-col">
           <p className=" borderColor border-2 w-[15vw] h-[50vh] rounded-full "></p>
-          <img src={lock} alt="" className="scale-[8] w-2"/>
+          <img src={lock} alt="" className="scale-[8] w-2" />
         </Upcoming1>
         <Upcoming2 className="flex items-center justify-center flex flex-col">
           {" "}
           <p className=" borderColor border-2 w-[15vw] h-[50vh] rounded-full "></p>{" "}
-          <img src={lock} alt="" className="scale-[8] w-2"/>
+          <img src={lock} alt="" className="scale-[8] w-2" />
         </Upcoming2>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import homeImg from "../../assets/home/homebg.png";
+import { Slide } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 const Title = () => {
   const HomeBg = styled.div`
@@ -20,19 +21,51 @@ const Title = () => {
   return (
     <HomeBg>
       <div className="flex items-center justify-center h-full mx-auto flex-col">
-        <div className="flex-wrap w-[80%] md:w-[60%] flex items-center justify-center">
-          <p className={style.white}>Let</p>
-          <p className={style.white}>The</p>
-          <p className={style.color}>Music</p>
-          <p className={style.white}>Ignite</p>
-          <p className={style.white}>Your</p>
-          <p className={style.color}>Imagination</p>
-        </div>
-        <Link to="/music">
-          <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-4">
-            Explore Now
-          </button>
-        </Link>
+        <Slide direction="up" triggerOnce className="flex items-center justify-center">
+          <div className="flex-wrap w-[80%] md:w-[60%] flex items-center justify-center">
+            <p
+              className={style.white}
+              style={{ fontFamily: "Clash Display, sans-serif" }}
+            >
+              Let
+            </p>
+            <p
+              className={style.white}
+              style={{ fontFamily: "Clash Display, sans-serif" }}
+            >
+              The
+            </p>
+            <p
+              className={style.color}
+              style={{ fontFamily: "Clash Display, sans-serif" }}
+            >
+              Music
+            </p>
+            <p
+              className={style.white}
+              style={{ fontFamily: "Clash Display, sans-serif" }}
+            >
+              Ignite
+            </p>
+            <p
+              className={style.white}
+              style={{ fontFamily: "Clash Display, sans-serif" }}
+            >
+              Your
+            </p>
+            <p
+              className={style.color}
+              style={{ fontFamily: "Clash Display, sans-serif" }}
+            >
+              Imagination
+            </p>
+          </div>
+          <Link to="/music">
+            <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-12">
+              Explore Now
+            </button>
+          </Link>
+        </Slide>
       </div>
     </HomeBg>
   );

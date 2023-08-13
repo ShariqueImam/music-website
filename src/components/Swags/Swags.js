@@ -2,7 +2,9 @@ import React from "react";
 import Title from "../Swags/Title";
 import Navbar from "../UI/Navbar/Navbar";
 import Footer from "../UI/Footer/Footer";
+import { Slide } from "react-awesome-reveal";
 import SwagsList from "./SwagsList";
+import Animator from "../UI/Animator";
 import swagImg1 from "../../assets/swags/swags.png";
 const Swags = () => {
   const onScroll = () => {};
@@ -21,12 +23,28 @@ const Swags = () => {
     { id: 12, img: swagImg1, name: "Green Hoodie", price: "$70", rating: "5" ,info:'This is the great product and we like it.'},
   ];
   return (
+    <Animator>
     <div className="bg-[#0b0b0b] flex flex-col items-center">
       <Navbar onScroll={onScroll} />
+      <Slide
+        direction="up"
+        triggerOnce
+        className="flex items-center justify-center w-[100%] h-[100%]"
+      >
+
       <Title />
+      </Slide>
+      <Slide
+        direction="up"
+        triggerOnce
+        className="flex items-center justify-center w-[100%] h-[100%]"
+      >
+
       <SwagsList swagData={swagData} />
+      </Slide>
       <Footer />
     </div>
+</Animator>
   );
 };
 

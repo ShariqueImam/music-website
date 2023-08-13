@@ -4,8 +4,10 @@ import img from "../../assets/music/featured.png";
 import img1 from "../../assets/music/featured1.png";
 import img2 from "../../assets/music/featured2.png";
 import img3 from "../../assets/music/featured3.png";
+import circle from "../../assets/circle.png";
 import { FaPlay } from "react-icons/fa";
 import icon from "../../assets/music/icon.png";
+import blue from '../../assets/blue.png'
 import { BsArrowUpRight } from "react-icons/bs";
 const FeaturedMusic = () => {
   const AboutHeading = styled.div`
@@ -15,6 +17,8 @@ const FeaturedMusic = () => {
     background-position: center;
     background-attachment: auto;
     height: 30vh;
+    margin: 5rem;
+
     width: 100vw;
     transform: scale(0.5);
   `;
@@ -22,13 +26,16 @@ const FeaturedMusic = () => {
   return (
     <div>
       {" "}
-      <AboutHeading className="flex items-center justify-center mt-12 md:mt-12">
+      <AboutHeading className="flex items-center justify-center mt-12 md:mt-12 z-10">
         <p className="text-6xl md:text-8xl text-white">Featured Music</p>
       </AboutHeading>
       <div className="flex items-center justify-around flex-col md:flex-row  w-[100%] md:w-[70%] mx-auto">
         <img src={img1} alt="" className="scale-[0.8]" />
         <div className="flex flex-col items-start ">
+          <img src={circle} alt="" className="scale-[0.8] absolute ml-[-30rem] z-0" />
           <section>
+          <img src={blue} alt="" className="absolute z-0 ml-[0rem]" />{" "}
+
             <h2 className="homeTextColor m-1 text-5xl md:text-7xl font-bold">
               Falling In Love
             </h2>

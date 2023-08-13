@@ -9,7 +9,8 @@ const Title = () => {
     background-size: cover;
     background-position: center;
     background-attachment: auto;
-    height: 30vh;
+    height: 40vh;
+    margin:6rem;
     width: 100vw;
     transform: scale(0.5);
   `;
