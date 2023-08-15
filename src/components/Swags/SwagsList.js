@@ -5,8 +5,8 @@ import blue from "../../assets/blue.png";
 import circle from "../../assets/circle.png";
 const SwagsList = ({ swagData }) => {
   return (
-    <div className="flex flex-wrap w-[95%] md:w-[80%] mx-auto items-center justify-center z-10">
-      <img src={blue} alt="" className="absolute z-0 ml-[50rem]" />{" "}
+    <div className="flex flex-wrap w-[95%] md:w-[80%] mx-auto items-center justify-center z-20">
+      {/* <img src={blue} alt="" className="absolute z-0 ml-[50rem]" />{" "} */}
       <img
         src={circle}
         alt=""
@@ -15,7 +15,7 @@ const SwagsList = ({ swagData }) => {
       {swagData.map((singleItem) => {
         return (
           <Link to={`/swags/${singleItem.id}`}>
-            <div className="flex flex-wrap w-[90vw] md:w-[23vw] items-center justify-center z-20">
+            <div className="flex flex-wrap w-[90vw] md:w-[23vw] items-center justify-center z-30">
               <SingleCard swagData={singleItem} />
             </div>
           </Link>

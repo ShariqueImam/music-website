@@ -2,7 +2,7 @@ import React from "react";
 import ReactStars from "react-stars";
 import styled from "styled-components";
 const style = {
-  wrapper: "z-10 mx-5 md:mx-3 my-16  flex flex-col items-start justify-end hover:scale-[0.95] transition duration-[300ms]",
+  wrapper: "z-30 mx-5 md:mx-3 my-16  flex flex-col items-start justify-end hover:scale-[0.95] transition duration-[300ms]",
   heading: "font-thin text-lg md:text-lg text-white w-[100%] md:w-[80%]",
   para: " text-sm md:text-lg mt-0 text-white font-semibold",
   line: "underline cursor-pointer",

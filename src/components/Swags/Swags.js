@@ -193,6 +193,8 @@ const Swags = () => {
     <Animator>
       <div className="bg-[#0b0b0b] flex flex-col items-center z-10">
         <img src={pink} alt="" className="absolute z-0 ml-[-70rem]" />
+        <img src={pink} alt="" className="absolute z-0 ml-[-70rem] mt-[180rem]" />
+        <img src={blue} alt="" className="absolute z-0 ml-[50rem] mt-[60rem]" />{" "}
         <Navbar onScroll={onScroll} />
         <Slide
           direction="up"
@@ -209,7 +211,6 @@ const Swags = () => {
           <SwagsList swagData={swagData} />
         </Slide>
        
-        <img src={blue} alt="" className="absolute z-0 ml-[50rem] mt-[60rem]" />{" "}
         <Footer />
       </div>
     </Animator>

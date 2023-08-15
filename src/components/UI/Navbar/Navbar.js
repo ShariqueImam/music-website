@@ -48,7 +48,9 @@ const Navbar = (props) => {
             <Link to="/music">
               <li
                 className={`${
-                  location.pathname == "/music" ? "text-[#EA2587]" : "text-white"
+                  location.pathname == "/music"
+                    ? "text-[#EA2587]"
+                    : "text-white"
                 } font-light border-move-animation list-none cursor-pointer mx-4 md:mx-4  text-md tracking-wide`}
                 onClick={() => setItem("services")}
               >
@@ -58,7 +60,9 @@ const Navbar = (props) => {
             <Link to="/swags">
               <li
                 className={`${
-                  location.pathname == "/swags" ? "text-[#EA2587]" : "text-white"
+                  location.pathname == "/swags"
+                    ? "text-[#EA2587]"
+                    : "text-white"
                 } font-light border-move-animation list-none cursor-pointer mx-4 md:mx-4  text-md tracking-wide`}
                 onClick={() => setItem("about")}
               >
@@ -68,7 +72,9 @@ const Navbar = (props) => {
             <Link to="/horoscope">
               <li
                 className={`${
-                  location.pathname == "/horoscope" ? "text-[#EA2587]" : "text-white"
+                  location.pathname == "/horoscope"
+                    ? "text-[#EA2587]"
+                    : "text-white"
                 } font-light border-move-animation list-none cursor-pointer mx-4 md:mx-4  text-md tracking-wide`}
                 onClick={() => setItem("email")}
               >
@@ -78,7 +84,9 @@ const Navbar = (props) => {
             <Link to="/">
               <li
                 className={`${
-                  location.pathname == "/lobby" ? "text-[#EA2587]" : "text-white"
+                  location.pathname == "/lobby"
+                    ? "text-[#EA2587]"
+                    : "text-white"
                 } font-light border-move-animation list-none cursor-pointer mx-4 md:mx-4  text-md tracking-wide`}
                 onClick={() => setItem("email")}
               >
@@ -87,9 +95,14 @@ const Navbar = (props) => {
             </Link>
           </ul>
         </div>
-        <button className={style.cartButton} onClick={() => setItem("contact")}>
-          Listen Now
-        </button>
+          <button
+            className={style.cartButton}
+            onClick={() => setItem("contact")}
+          >
+        <a href="https://open.spotify.com/artist/0UFMrFPIyckNR4h3WefoJh">
+            Listen Now
+        </a>
+          </button>
       </nav>
       <div className={style.navDrawer}>
         <NavDrawer onScroll={handleScroll} />
