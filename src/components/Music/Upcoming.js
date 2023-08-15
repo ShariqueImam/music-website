@@ -56,11 +56,11 @@ const Upcoming = () => {
         <p className="text-6xl md:text-8xl text-white">Upcoming Music</p>
       </AboutHeading>{" "}
       <div className="flex items-center justify-center">
-        <Upcoming1 className="flex items-center justify-center flex flex-col">
+        <Upcoming1 className="flex items-center justify-center flex flex-col hover:scale-[0.9] transition duration-[300ms]">
           <p className=" borderColor border-2 w-[15vw] h-[50vh] rounded-full "></p>
           <img src={lock} alt="" className="scale-[8] w-2" />
         </Upcoming1>
-        <Upcoming2 className="flex items-center justify-center flex flex-col">
+        <Upcoming2 className="flex items-center justify-center flex flex-col hover:scale-[0.9] transition duration-[300ms]">
           {" "}
           <p className=" borderColor border-2 w-[15vw] h-[50vh] rounded-full "></p>{" "}
           <img src={lock} alt="" className="scale-[8] w-2" />

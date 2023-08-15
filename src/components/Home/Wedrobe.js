@@ -45,7 +45,7 @@ export default Wedrobe;
 
 const style = {
   wrapper:
-    "mx-5 md:mx-3 my-4 p-6 md:p-12 flex flex-col items-start justify-end",
+    "mx-5 md:mx-3 my-4 p-6 md:p-12 flex flex-col items-start justify-end hover:scale-[0.9] transition duration-[300ms]",
   heading: "font-thin text-2xl md:text-2xl text-white w-[100%] md:w-[80%]",
   para: " text-sm md:text-xl mt-2 text-white font-semibold",
   line: "underline cursor-pointer",

@@ -7,7 +7,7 @@
 
 :root {
   --swiper-pagination-color: #4259ec;
-  --swiper-pagination-bullet-size:12px;
+  --swiper-pagination-bullet-size: 12px;
   --swiper-pagination-bullet-width: 15px;
   --swiper-pagination-bullet-height: 15px;
   --swiper-pagination-bullet-inactive-color: #f33c9a;
@@ -48,6 +48,11 @@
     rgba(173, 183, 234, 0.11) 100%
   );
   backdrop-filter: blur(2.0077219009399414px);
+}
+.contactNow:hover {
+  background: linear-gradient(99deg, #f33c9a 0%, #4259ec 100%);
+  border: 2px solid none;
+
 }
 .border-gradient-purple {
   /* border-radius: 0.38006rem;

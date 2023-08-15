@@ -10,7 +10,7 @@ const Title = () => {
     background-position: center;
     background-attachment: auto;
     height: 40vh;
-    margin:6rem;
+    margin: 6rem;
     width: 100vw;
     transform: scale(0.5);
   `;
@@ -26,9 +26,11 @@ const Title = () => {
           <h2 className="text-7xl md:text-8xl text-white font-semibold w-[70%]">
             listen it on sound cloud!
           </h2>
-          <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-4">
-            CTA
-          </button>
+          <a href="https://soundcloud.com/tmjuelz">
+            <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-4">
+              Listen Now
+            </button>
+          </a>
         </section>
         <img src={img1} alt="" className="scale-[0.7]" />
       </div>

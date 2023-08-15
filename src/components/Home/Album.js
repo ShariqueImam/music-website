@@ -59,7 +59,7 @@ const Album = () => {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex items-center justify-center  crop">
+            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] crop">
               <div className="flex items-center justify-center ">
                 <img
                   src={albumImg1}
@@ -68,7 +68,7 @@ const Album = () => {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex items-center justify-center ">
+            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms]">
               <div className="flex items-center justify-center ">
                 <img
                   src={albumImg1}
@@ -77,7 +77,7 @@ const Album = () => {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex items-center justify-center  crop1">
+            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] crop1">
               <div className="flex items-center justify-center ">
                 <img
                   src={albumImg1}
@@ -86,7 +86,7 @@ const Album = () => {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex items-center justify-center ">
+            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms]">
               <div className="flex items-center justify-center ">
                 <img
                   src={albumImg1}

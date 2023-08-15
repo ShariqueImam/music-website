@@ -16,7 +16,7 @@ const Navbar = (props) => {
     list: "font-light border-move-animation list-none cursor-pointer text-white mx-4 md:mx-4  text-md tracking-wide",
     navContainer: "flex items-center justify-center",
     cartButton:
-      "contactNow border-gradient-purple  border w-[15%] font-light rounded-lg text-white tracking-wider flex items-center justify-center mx-5 px-3 py-2 text-md",
+      "contactHover contactNow border-gradient-purple  border w-[15%] font-light rounded-lg text-white tracking-wider flex items-center justify-center mx-5 px-3 py-2 text-md",
     img: "cursor-pointer w-[15%]",
     input: "bg-transparent text-white cursor-pointer",
   };
@@ -88,7 +88,7 @@ const Navbar = (props) => {
           </ul>
         </div>
         <button className={style.cartButton} onClick={() => setItem("contact")}>
-          Contact Now
+          Listen Now
         </button>
       </nav>
       <div className={style.navDrawer}>
