@@ -23,7 +23,7 @@ const MainPage = () => {
     background-position: center;
     background-attachment: auto;
     height: 30vh;
-    width: 80vw;
+    width: 100vw;
     transform: scale(0.5);
     margin: 5rem;
   `;

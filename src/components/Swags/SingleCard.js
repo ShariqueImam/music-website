@@ -18,6 +18,7 @@ const SingleCard = ({ swagData }) => {
     height: 55vh;
   `;
   return (
+    
     <FeaturedBackground1 className={style.wrapper}>
       <section className="w-full swagsItem border-t-[1px] border-t-[#F33C9A] p-2 md:px-3 rounded-tr-[20px] rounded-tl-[20px] ">
         <h2 className={style.heading}>{swagData.name}</h2>
