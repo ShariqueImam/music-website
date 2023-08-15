@@ -5,6 +5,7 @@ import { Slide } from "react-awesome-reveal";
 import Newsletter from "../UI/Newsletter/Newsletter";
 import swagImg1 from "../../assets/swags/swags.png";
 import ReactStars from "react-stars";
+import pink from "../../assets/pink.png";
 import { useParams } from "react-router-dom";
 import Title from "./Title";
 const SwagDetails = ({ match }) => {
@@ -114,6 +115,7 @@ const SwagDetails = ({ match }) => {
   return (
     <div className="bg-[#0b0b0b] flex flex-col items-center">
       <Navbar onScroll={onScroll} />
+
       <Title />
       <Slide
         direction="up"
@@ -121,6 +123,8 @@ const SwagDetails = ({ match }) => {
         className="flex items-center justify-center "
       >
         <div className="flex flex-col md:flex-row">
+        <img src={pink} alt="" className="absolute z-0 ml-[-30rem] mt-[-60rem]" />
+
           <img
             src={swagImg1}
             alt=""
