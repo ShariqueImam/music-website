@@ -38,11 +38,11 @@ const Album = () => {
         <section className="w-[90vw]">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            effect={"coverflow"}
-            centeredSlides={true}
+            // effect={"coverflow"}
+            // centeredSlides={true}
             // coverflowEffect={{ rotate: 0, stretch: 0, depth: 0, modifier: 2.5 }}
             spaceBetween={20}
-            slidesPerView={3}
+            slidesPerView={5}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
             // navigation
@@ -51,38 +51,20 @@ const Album = () => {
             className="flex items-center justify-center py-24"
           >
             <SwiperSlide className="flex items-center justify- center">
-              <div className="flex items-center justify- ">
-                <img
-                  src={albumImg1}
-                  alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem]"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] crop">
               <div className="flex items-center justify-center ">
                 <img
                   src={albumImg1}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem]"
+                  className=" scale-[0.9] w-[25rem] h-[28rem]"
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms]">
+            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] ">
               <div className="flex items-center justify-center ">
                 <img
                   src={albumImg1}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem]"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] crop1">
-              <div className="flex items-center justify-center ">
-                <img
-                  src={albumImg1}
-                  alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem]"
+                  className=" scale-[0.9] w-[25rem] h-[28rem]"
                 />
               </div>
             </SwiperSlide>
@@ -91,7 +73,25 @@ const Album = () => {
                 <img
                   src={albumImg1}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem]"
+                  className=" scale-[0.9] w-[25rem] h-[28rem]"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] ">
+              <div className="flex items-center justify-center ">
+                <img
+                  src={albumImg1}
+                  alt=""
+                  className=" scale-[0.9] w-[25rem] h-[28rem]"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms]">
+              <div className="flex items-center justify-center ">
+                <img
+                  src={albumImg1}
+                  alt=""
+                  className=" scale-[0.9] w-[25rem] h-[28rem]"
                 />
               </div>
             </SwiperSlide>
