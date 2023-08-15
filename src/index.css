@@ -7,6 +7,11 @@
   src: local("Clash Display"),
     url("./fonts/ClashDisplay-Medium.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Clash Display";
+  src: local("Clash Display"),
+    url("./fonts/ClashDisplay-Light.ttf") format("truetype");
+}
 body {
   font-family: "Clash Display", sans-serif;
   overflow-x: hidden;

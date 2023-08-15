@@ -3,7 +3,7 @@ import Navbar from "../../components/UI/Navbar/Navbar";
 import Footer from "../UI/Footer/Footer";
 import { Slide } from "react-awesome-reveal";
 import Newsletter from "../UI/Newsletter/Newsletter";
-import swagImg1 from "../../assets/swags/swags.png";
+import swagImg1 from "/../../assets/swags/swags.png";
 import ReactStars from "react-stars";
 import pink from "../../assets/pink.png";
 import { useParams } from "react-router-dom";
