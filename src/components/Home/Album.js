@@ -41,7 +41,7 @@ const Album = () => {
             // effect={"coverflow"}
             // centeredSlides={true}
             // coverflowEffect={{ rotate: 0, stretch: 0, depth: 0, modifier: 2.5 }}
-            spaceBetween={20}
+            spaceBetween={0}
             slidesPerView={5}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
