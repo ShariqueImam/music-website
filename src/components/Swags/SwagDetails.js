@@ -3,7 +3,7 @@ import Navbar from "../../components/UI/Navbar/Navbar";
 import Footer from "../UI/Footer/Footer";
 import { Slide } from "react-awesome-reveal";
 import Newsletter from "../UI/Newsletter/Newsletter";
-import swagImg1 from "/../../assets/swags/swags.png";
+// import '/assets/swags/swags.png' from "../../assets/swags/swags.png";
 import ReactStars from "react-stars";
 import pink from "../../assets/pink.png";
 import { useParams } from "react-router-dom";
@@ -15,7 +15,7 @@ const SwagDetails = ({ match }) => {
   const swagData = [
     {
       id: 1,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -23,7 +23,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 2,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -31,7 +31,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 3,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -39,7 +39,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 4,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -47,7 +47,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 5,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -55,7 +55,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 6,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -63,7 +63,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 7,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -71,7 +71,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 8,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -79,7 +79,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 9,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -87,7 +87,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 10,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -95,7 +95,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 11,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -103,7 +103,7 @@ const SwagDetails = ({ match }) => {
     },
     {
       id: 12,
-      img: swagImg1,
+      img: '/assets/swags/swags.png',
       name: "Green Hoodie",
       price: "$70",
       rating: "5",
@@ -126,7 +126,7 @@ const SwagDetails = ({ match }) => {
         <img src={pink} alt="" className="absolute z-0 ml-[-30rem] mt-[-60rem]" />
 
           <img
-            src={swagImg1}
+            src={product.img}
             alt=""
             className="rounded-2xl w-64 mx-auto md:w-auto"
           />

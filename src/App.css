@@ -16,15 +16,7 @@
   --swiper-pagination-bullet-horizontal-gap: 4px;
   --swiper-pagination-bullet-vertical-gap: 6px;
 }
-.newsletterBg {
-  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("./assets/newsletterbg.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: auto;
-  width: 100vw;
-}
+
 .border-move-animation::after {
   content: "";
   display: block;

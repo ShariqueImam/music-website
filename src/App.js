@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Home from "./components/Home/Home";
 import { Routes, Route, Link, Outlet, BrowserRouter } from "react-router-dom";
 import Music from "./components/Music/Music";
-import Swags from './components/Swags/Swags'
+import Swags from "./components/Swags/Swags";
 import "./App.css";
 import Horoscope from "./components/Horoscope/Horoscope";
 import SwagDetails from "./components/Swags/SwagDetails";
