@@ -24,36 +24,74 @@ const Footer = (props) => {
           </h2> */}
         </section>
         <section>
-          <h2 className="font-semibold">Home</h2>
-          <p className="font-thin my-4">About</p>
-          <p className="font-thin my-4">Music Album</p>
-          <p className="font-thin my-4">Wedrobe</p>
+          <a href="/">
+            <h2 className="font-semibold">Home</h2>
+          </a>
+          <a href="/">
+            <p className="font-thin my-4">About</p>
+          </a>
+          <a href="/">
+            <p className="font-thin my-4">Music Album</p>
+          </a>{" "}
+          <a href="/">
+            <p className="font-thin my-4">Wedrobe</p>
+          </a>
         </section>
         <section className="">
-          <h2 className="font-semibold">Music</h2>
-          <p className="font-thin my-4">Featured</p>
-          <p className="font-thin my-4">Upcoming</p>
-          <p className="font-thin my-4">Wedrobe</p>
+          <a href="/music">
+            <h2 className="font-semibold">Music</h2>
+          </a>{" "}
+          <a href="/music">
+            <p className="font-thin my-4">Featured</p>
+          </a>{" "}
+          <a href="/music">
+            <p className="font-thin my-4">Upcoming</p>
+          </a>{" "}
+          <a href="/music">
+            <p className="font-thin my-4">Wedrobe</p>
+          </a>
         </section>
         <section>
-          <h2 className="font-semibold">Swags</h2>
-          <p className="font-thin my-4">Hoodies</p>
-          <p className="font-thin my-4">Shirts</p>
-          <p className="font-thin my-4">Shorts</p>
-          <p className="font-thin my-4">Polo</p>
-          <p className="font-thin my-4">Umbrella</p>
+          <a href="/swags">
+            <h2 className="font-semibold">Swags</h2>
+          </a>{" "}
+          <a href="/swags">
+            <p className="font-thin my-4">Hoodies</p>
+          </a>{" "}
+          <a href="/swags">
+            <p className="font-thin my-4">Shirts</p>
+          </a>{" "}
+          <a href="/swags">
+            <p className="font-thin my-4">Shorts</p>
+          </a>{" "}
+          <a href="/swags">
+            <p className="font-thin my-4">Polo</p>
+          </a>{" "}
+          <a href="/swags">
+            <p className="font-thin my-4">Umbrella</p>
+          </a>
         </section>
         <section>
-          <h2 className="font-semibold">Horoscope</h2>
-          <p className="font-thin my-4">Horoscope</p>
+          <a href="/horoscope">
+            <h2 className="font-semibold">Horoscope</h2>
+          </a>{" "}
+          <a href="/horoscope">
+            <p className="font-thin my-4">Horoscope</p>
+          </a>
         </section>
         <section>
-          <h2 className="font-semibold">Live</h2>
-          <p className="font-thin my-4">Live</p>
+          <a href="/live">
+            <h2 className="font-semibold">Live</h2>
+          </a>{" "}
+          <a href="/live">
+            <p className="font-thin my-4">Live</p>
+          </a>
         </section>
       </div>
       <div className="mt-16 flex items-center justify-between w-[100%]">
-        <h2 className="my-3 md:my-1">All rights reserved @mysteriousmusic.co.uk</h2>
+        <h2 className="my-3 md:my-1">
+          All rights reserved @mysteriousmusic.co.uk
+        </h2>
         <section className="flex">
           <AiFillInstagram className="text-white text-2xl mx-3" />
           <AiFillFacebook className="text-white text-2xl mx-3" />

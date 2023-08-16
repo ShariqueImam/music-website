@@ -29,9 +29,9 @@ const Wedrobe = () => {
         className="flex items-center justify-center w-[100%] h-[100%]"
       >
         <section className="flex items-center justify-center w-[100%]">
-          <SingleCard image={img1} heading={"Green Hoodie"} price={"$150"} />
-          <SingleCard image={img1} heading={"Green Hoodie"} price={"$150"} />
-          <SingleCard image={img1} heading={"Green Hoodie"} price={"$150"} />
+          <SingleCard image={'/assets/swags/grey-short1.jpg'} heading={"Green Hoodie"} price={"$150"} />
+          <SingleCard image={'/assets/swags/grey-short2.jpg'} heading={"Green Hoodie"} price={"$150"} />
+          <SingleCard image={'/assets/swags/grey-short3.jpg'} heading={"Green Hoodie"} price={"$150"} />
         </section>
         <button className="mx-auto  exploreBtn shopNow px-14 md:px-20 py-3 md:py-4 mt-24 text-white mx-auto self-center">
           <Link to="/swags">Shop Now</Link>

@@ -14,7 +14,8 @@ import sign9 from "../../assets/horoscope/sagittarius-svgrepo-com.svg";
 import sign10 from "../../assets/horoscope/scorpio-svgrepo-com.svg";
 import sign11 from "../../assets/horoscope/taurus-svgrepo-com.svg";
 import sign12 from "../../assets/horoscope/virgo-svgrepo-com.svg";
-
+import pink from '../../assets/pink.png'
+import blue from '../../assets/blue.png'
 const MainPage = () => {
   const AboutHeading = styled.div`
     background: url(${img});
@@ -38,7 +39,7 @@ const MainPage = () => {
   `;
   const [Sign, setSign] = useState("1");
   const style = {
-    item: "w-16 md:w-24 scale-[0.8] ",
+    item: "w-16 md:w-24 scale-[0.8] text-white",
     iconText: "text-white text-xl md:text-xl text-center",
   };
   return (
@@ -48,6 +49,8 @@ const MainPage = () => {
         <AboutHeading className="flex items-center justify-center mt-24 md:mt-32">
           <p className="text-6xl md:text-8xl text-white">Horoscope</p>
         </AboutHeading>
+        <img src={pink} alt="" className="absolute z-0 ml-[-70rem]" />
+        <img src={blue} alt="" className="absolute z-0 ml-[50rem] mt-[60rem]" />{" "}
         <div className="flex items-center justify-center flex-col my-8">
           <p className="text-4xl md:text-5xl text-white my-4 text-center md:text-center">
             To Know About Your Daily Horoscope

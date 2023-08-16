@@ -6,14 +6,13 @@ import Newsletter from "../UI/Newsletter/Newsletter";
 // import '/assets/swags/swags.png' from "../../assets/swags/swags.png";
 import ReactStars from "react-stars";
 import pink from "../../assets/pink.png";
-import blue from '../../assets/blue.png'
 import { useParams } from "react-router-dom";
 import Title from "./Title";
 const SwagDetails = ({ match }) => {
   const params = useParams();
   const [Size, setSize] = useState("S");
   const onScroll = () => {};
-  window.scrollTo(0,0)
+  // window.scrollTo(0,0)
   const swagData = [
     {
       id: 1,
@@ -193,11 +192,9 @@ const SwagDetails = ({ match }) => {
     },
   ];
   const product = swagData.find((item) => item.id === parseInt(params.id));
-  console.log(product);
   return (
     <div className="bg-[#0b0b0b] flex flex-col items-center">
       <Navbar onScroll={onScroll} />
-
       <Title />
       <Slide
         direction="up"

@@ -28,7 +28,7 @@ const FeaturedMusic = () => {
     <div>
       {" "}
       <Slide
-        direction="up"
+        direction="right"
         className="flex items-center justify-center "
         triggerOnce={false}
       >
@@ -37,7 +37,7 @@ const FeaturedMusic = () => {
         </AboutHeading>
       </Slide>
       <Slide
-        direction="up"
+        direction="right"
         className="flex items-center justify-center "
         triggerOnce={true}
       >
@@ -81,7 +81,7 @@ const FeaturedMusic = () => {
         </div>
       </Slide>
       <Slide
-        direction="up"
+        direction="left"
         className="flex items-center justify-center "
         triggerOnce={true}
       >
@@ -119,7 +119,7 @@ const FeaturedMusic = () => {
         </div>
       </Slide>
       <Slide
-        direction="up"
+        direction="right"
         className="flex items-center justify-center "
         triggerOnce={true}
       >

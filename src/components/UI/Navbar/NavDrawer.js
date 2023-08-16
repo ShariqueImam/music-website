@@ -22,6 +22,7 @@ const NavDrawer = (props) => {
   };
   const style = {
     list: "list-none cursor-pointer  text-neutral-400 my-3  mx-auto md:mx-4 hover:opacity-[0.8] text-sm font-normal",
+    list1: "flex list-none cursor-pointer  text-neutral-400 my-3  mx-auto md:mx-4 hover:opacity-[0.8] text-sm font-normal",
     input: "bg-transparent mx-4",
   };
   const list = (anchor) => (
@@ -78,13 +79,24 @@ const NavDrawer = (props) => {
                 Horoscope
               </li>
             </Link>
+            <Link to={"/live"}>
+              <li
+                className={style.list1}
+                onClick={() => props.onScroll("email")}
+              >
+                Live
+                <p className="w-2 h-2 bg-red-600 rounded-full"></p>
+              </li>
+            </Link>
           </ul>
-          <button
-            className="mx-auto exploreBtn text-white px-12 py-2 rounded-lg mt-48 cursor-pointer hover:opacity-[0.9]"
-            onClick={() => props.onScroll("contact")}
-          >
-            Contact
-          </button>
+          <a href="https://open.spotify.com/artist/0UFMrFPIyckNR4h3WefoJh">
+            <button
+              className="mx-auto exploreBtn text-white px-12 py-2 rounded-lg mt-48 cursor-pointer hover:opacity-[0.9]"
+              onClick={() => props.onScroll("contact")}
+            >
+              Listen Now
+            </button>
+          </a>
         </div>
       </List>
     </Box>

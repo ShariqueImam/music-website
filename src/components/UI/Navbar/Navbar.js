@@ -87,10 +87,11 @@ const Navbar = (props) => {
                   location.pathname == "/lobby"
                     ? "text-[#EA2587]"
                     : "text-white"
-                } font-light border-move-animation list-none cursor-pointer mx-4 md:mx-4  text-md tracking-wide`}
+                } flex font-light  list-none cursor-pointer mx-4 md:mx-4  text-md tracking-wide`}
                 onClick={() => setItem("email")}
               >
-                Lobby
+                Live
+                <p className="w-2 h-2 bg-red-600 rounded-full"></p>
               </li>
             </Link>
           </ul>

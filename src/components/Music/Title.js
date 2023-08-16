@@ -19,15 +19,15 @@ const Title = () => {
     <div className="flex items-center justify-center flex-col w-[100%] md:w-[70%]">
       {" "}
       <AboutHeading className="flex items-center justify-center mt-24 md:mt-32">
-        <p className="text-6xl md:text-8xl text-white">About Me</p>
+        <p className="text-6xl md:text-8xl text-white">My Music</p>
       </AboutHeading>
       <div className="flex items-center flex-col md:flex-row">
         <section>
-          <h2 className="text-7xl md:text-8xl text-white font-semibold w-[70%]">
-            listen it on sound cloud!
+          <h2 className="text-7xl md:text-7xl text-white font-semibold w-[70%]">
+            LISTEN IT ON SOUND CLOUD{" "}
           </h2>
           <a href="https://soundcloud.com/tmjuelz">
-            <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-4">
+            <button className="exploreBtn text-white px-12 md:px-16 py-3 md:py-4 my-16">
               Listen Now
             </button>
           </a>
