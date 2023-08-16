@@ -1,7 +1,8 @@
 import React from "react";
 import img1 from "../../assets/home/wedrobe1.png";
 import styled from "styled-components";
-import moreMusic from "../../assets/music/moreMusic.png";
+import moreMusic from "../../assets/music/featured3.png";
+import moreMusic1 from "../../assets/music/featured2.png";
 import pink from '../../assets/pink.png'
 import img2 from "../../assets/music/featured1.png";
 const MoreMusic = () => {
@@ -18,9 +19,9 @@ const MoreMusic = () => {
         <p className="underlineColor w-[10vw] h-[0.3vh]"></p>
       </div>
       <section className="flex items-center justify-center flex-col md:flex-row">
-        <SingleCard image={'/assets/swags/black-shorts-1.jpg'} heading={"Green Hoodie"} price={"$150"} />
-        <SingleCard image={'/assets/swags/black-shorts-2.jpg'} heading={"Green Hoodie"} price={"$150"} />
-        <SingleCard image={'/assets/swags/black-shorts-3.jpg'} heading={"Green Hoodie"} price={"$150"} />
+        <SingleCard image={moreMusic} heading={"Green Hoodie"} price={"$150"} />
+        <SingleCard image={moreMusic1} heading={"Green Hoodie"} price={"$150"} />
+        <SingleCard image={moreMusic} heading={"Green Hoodie"} price={"$150"} />
       </section>
     </div>
   );

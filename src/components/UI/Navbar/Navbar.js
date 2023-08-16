@@ -91,7 +91,7 @@ const Navbar = (props) => {
                 onClick={() => setItem("email")}
               >
                 Live
-                <p className="w-2 h-2 bg-red-600 rounded-full"></p>
+                <p className="w-2 h-2 bg-red-400 rounded-full"></p>
               </li>
             </Link>
           </ul>

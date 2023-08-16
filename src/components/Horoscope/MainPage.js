@@ -50,7 +50,7 @@ const MainPage = () => {
           <p className="text-6xl md:text-8xl text-white">Horoscope</p>
         </AboutHeading>
         <img src={pink} alt="" className="absolute z-0 ml-[-70rem]" />
-        <img src={blue} alt="" className="absolute z-0 ml-[50rem] mt-[60rem]" />{" "}
+        <img src={blue} alt="" className="absolute z-0 ml-[70rem] mt-[60rem]" />{" "}
         <div className="flex items-center justify-center flex-col my-8">
           <p className="text-4xl md:text-5xl text-white my-4 text-center md:text-center">
             To Know About Your Daily Horoscope

@@ -26,7 +26,7 @@ const Album = () => {
     width: 90vw;
   `;
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center z-30">
       <img src={circle} alt="" className="absolute z-0 ml-[30rem] " />{" "}
       <img src={blue} alt="" className="absolute z-0 ml-[70rem] " />{" "}
       <AlbumHeading className="flex items-center justify-center">
@@ -57,7 +57,7 @@ const Album = () => {
                 <img
                   src={albumImg1}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
+                  className=" scale-[0.9] w-[25rem] h-[33rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>
@@ -66,7 +66,7 @@ const Album = () => {
                 <img
                   src={albumImg2}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
+                  className=" scale-[0.9] w-[25rem] h-[33rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>
@@ -75,7 +75,7 @@ const Album = () => {
                 <img
                   src={albumImg3}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
+                  className=" scale-[0.9] w-[25rem] h-[33rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>
@@ -84,7 +84,7 @@ const Album = () => {
                 <img
                   src={albumImg2}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
+                  className=" scale-[0.9] w-[25rem] h-[33rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>
@@ -93,7 +93,7 @@ const Album = () => {
                 <img
                   src={albumImg2}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
+                  className=" scale-[0.9] w-[25rem] h-[33rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>
