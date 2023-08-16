@@ -28,7 +28,7 @@ const FeaturedMusic = () => {
     <div>
       {" "}
       <Slide
-        direction="right"
+        direction="up"
         className="flex items-center justify-center "
         triggerOnce={false}
       >

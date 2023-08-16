@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import albumImg from "../../assets/home/album.png";
-import albumImg1 from "../../assets/home/album1.png";
+import albumImg1 from "../../assets/music/featured1.png";
+import albumImg2 from "../../assets/music/featured2.png";
+import albumImg3 from "../../assets/music/featured1.png";
 import circle from "../../assets/circle.png";
 import blue from "../../assets/blue.png";
 import { Slide } from "react-awesome-reveal";
@@ -53,45 +55,45 @@ const Album = () => {
             <SwiperSlide className="flex items-center justify- center">
               <div className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] ">
                 <img
-                  src={'/assets/swags/shirt-design.jpg'}
+                  src={albumImg1}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[28rem]"
+                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] ">
               <div className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] ">
                 <img
-                  src={'/assets/swags/shirt-design2.jpg'}
+                  src={albumImg2}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[28rem]"
+                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms]">
               <div className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] ">
                 <img
-                  src={'/assets/swags/shirt-design3.jpg'}
+                  src={albumImg3}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[28rem]"
+                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] ">
               <div className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] ">
                 <img
-                  src={'/assets/swags/shirt-design2.jpg'}
+                  src={albumImg2}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[28rem]"
+                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms]">
               <div className="flex items-center justify-center hover:scale-[0.9] transition duration-[300ms] ">
                 <img
-                  src={'/assets/swags/shirt-design3.jpg'}
+                  src={albumImg2}
                   alt=""
-                  className=" scale-[0.9] w-[25rem] h-[28rem]"
+                  className=" scale-[0.9] w-[25rem] h-[32rem] rounded-xl"
                 />
               </div>
             </SwiperSlide>

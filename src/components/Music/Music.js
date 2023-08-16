@@ -8,12 +8,14 @@ import Footer from "../UI/Footer/Footer";
 import Animator from "../UI/Animator";
 import { Slide } from "react-awesome-reveal";
 import pink from "../../assets/pink.png";
+import circle2 from '../../assets/circle2.png'
 const Music = () => {
   const onScroll = () => {};
   return (
     // <Animator>
     <div className="flex flex-col items-center bg-[#0b0b0b] z-10">
       <Navbar onScroll={onScroll} />
+      <img src={circle2} alt="" className="absolute z-0 ml-[-30rem] mt-[-10rem]" />
       <img src={pink} alt="" className="absolute z-0 ml-[-70rem]" />
       <Slide
         direction="up"
@@ -22,13 +24,8 @@ const Music = () => {
       >
         <Title />
       </Slide>
-      <Slide
-        direction="up"
-        triggerOnce
-        className="flex items-center justify-center "
-      >
-        <FeaturedMusic />
-      </Slide>
+
+      <FeaturedMusic />
       <Slide
         direction="up"
         triggerOnce
@@ -50,7 +47,3 @@ const Music = () => {
 };
 
 export default Music;
-
-
-
-
