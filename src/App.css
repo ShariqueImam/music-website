@@ -44,7 +44,6 @@
 .contactNow:hover {
   background: linear-gradient(99deg, #f33c9a 0%, #4259ec 100%);
   border: 2px solid none;
-
 }
 .border-gradient-purple {
   /* border-radius: 0.38006rem;
@@ -127,4 +126,10 @@
 }
 .crop1 {
   clip-path: polygon(0 31%, 100% 0, 100% 100%, 0 74%);
+}
+
+.live {
+  border-radius: 1.25rem;
+  border: 1px solid #fb2b92;
+  background: rgba(217, 217, 217, 0.1);
 }

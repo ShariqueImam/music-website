@@ -6,9 +6,10 @@ import Animator from "./components/UI/Animator";
 
 import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-    <div className="overflow-x-hidden bg-[#0b0b0b]">
+    <div className="overflow-x-hidden bg-[#0b0b0]">
       <App />
     </div>
   </React.StrictMode>

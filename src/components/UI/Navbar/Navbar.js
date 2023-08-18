@@ -81,10 +81,10 @@ const Navbar = (props) => {
                 Horoscope
               </li>
             </Link>
-            <Link to="/">
+            <Link to="/live">
               <li
                 className={`${
-                  location.pathname == "/lobby"
+                  location.pathname == "/live"
                     ? "text-[#EA2587]"
                     : "text-white"
                 } flex font-light  list-none cursor-pointer mx-4 md:mx-4  text-md tracking-wide`}
