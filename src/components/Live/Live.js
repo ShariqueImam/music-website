@@ -56,8 +56,7 @@ const Live = () => {
         >
           <div className="live w-[80vw] h-[80vh] flex items-center justify-center text-white text-5xl md:text-6xl">
             <p>Will be Live Soon....</p>
-          </div>
-          <iframe
+          {/* <iframe
             id="stream"
             width="560"
             height="315"
@@ -65,7 +64,8 @@ const Live = () => {
             src="https://www.youtube.com/embed/live_stream?channel=UCyIrupqJGBK5yGBz4xhEPeg&autoplay=1"
             frameborder="0"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
+          </div>
         </Slide>
         <Footer />
       </div>
