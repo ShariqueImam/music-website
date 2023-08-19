@@ -9,7 +9,7 @@ const Navbar = (props) => {
   const style = {
     navDrawer: "flex sm:hidden items-center text-white ",
     wrapper:
-      "text-gray-900 pt-1 md:py-6 z-10 w-[100%] md:w-[85%] bg-opacity-[0.9] mx-auto  font absolute",
+      "text-gray-900  md:py-6 z-10 w-[100%] md:w-[85%] bg-opacity-[0.9] mx-auto  font absolute",
     mainNav:
       "flex items-center justify-between py-1 md:py-1 hidden sm:flex w-[100%] md:w-[90%] mx-auto",
     navList: "w-[60%] flex items-center justify-center ",
@@ -32,7 +32,7 @@ const Navbar = (props) => {
     <div className={style.wrapper}>
       <nav className={style.mainNav}>
         <div className={style.img}>
-          <img src={logo} alt="logo for website" />
+          <img src={logo} alt="logo for website" className={style.img}/>
         </div>
         <div className={style.navList}>
           <ul className={style.navContainer}>

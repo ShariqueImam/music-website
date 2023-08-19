@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 import about from "../../assets/home/about.png";
 import { Slide } from "react-awesome-reveal";
 import pink from "../../assets/pink.png";
+import useWindowSize from "../../hooks/useWindowSize";
 const About = () => {
   const style = {};
+  const { width } = useWindowSize();
   const AboutHeading = styled.div`
     background: url(${img});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: auto;
-    margin: 8rem;
-    height: 20vh;
+    margin: ${width < 500 ? "5rem 0" : "8rem 0"};
+    height: ${width < 500 ? "4vh" : "20vh"};
     width: 70vw;
   `;
 
@@ -23,7 +25,9 @@ const About = () => {
       {" "}
       <img src={pink} alt="" className="absolute z-0 ml-[-90rem] " />{" "}
       <AboutHeading className="flex items-center justify-center">
-        <p className="text-6xl md:text-8xl text-white">About Me</p>
+        <p className="text-4xl md:text-8xl text-white text-center md:text-auto">
+          About Me
+        </p>
       </AboutHeading>
       <Slide
         direction="up"
@@ -31,10 +35,10 @@ const About = () => {
         className="flex items-center justify-center"
       >
         <div className="my-8 md:my-16 flex flex-col md:flex-row mx-auto w-[95%] md:w-[80%] lg:w-[70%] items-center justify-between">
-          <section className="md:w-[50%]">
-            <p className="homeTextColor text-5xl md:text-6xl">TM Juelz</p>
-            <p className="text-white my-4 text-2xl">Rapper, musician</p>
-            <p className="text-white my-4 w-[95%] md:w-[70%]">
+          <section className="md:w-[50%] flex flex-col items-center md:items-start">
+            <p className="homeTextColor text-5xl md:text-6xl text-center md:text-auto">TM Juelz</p>
+            <p className="text-white my-4 text-2xl  text-center md:text-auto">Rapper, musician</p>
+            <p className="text-white my-4 w-[95%] md:w-[70%]  text-center md:text-auto text-sm">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -53,7 +57,7 @@ const About = () => {
               </button>
             </Link>
           </section>
-          <section className="md:w-[40%]">
+          <section className="w-[70%] md:w-[40%] my-8 md:my-2">
             <img src={about} alt="" />
           </section>
         </div>

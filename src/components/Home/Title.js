@@ -15,8 +15,8 @@ const Title = () => {
     width: 100vw;
   `;
   const style = {
-    white: "homeTextWhite m-1 text-6xl md:text-8xl",
-    color: "homeTextColor m-1 text-6xl md:text-8xl",
+    white: "homeTextWhite m-1 text-5xl md:text-8xl",
+    color: "homeTextColor m-1 text-5xl md:text-8xl",
   };
   return (
     <HomeBg>
